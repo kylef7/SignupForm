@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: Poppins;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.leftSide {
+    width: 40%;
+    background-image: url("img/leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rightSide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+}
+
+.logoContainer {
+    width: 100%;
+    margin-top: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.logoContainer img {
+    width: 100px;
+}
+
+.logoContainer span {
+    color: white;
+    font-size: 5rem;
+    font-family: norse-bold;
+}
+
+.introText {
+    font-weight: bold;
+    font-size: 1.25rem;
+    max-width: 625px;
+    margin-left: 50px;
+}
+
+
+.formContainer {
+    background-color: #fff;
+    box-shadow: 0px 8px 10px -5px rgba(95, 95, 95, 0.3);
+    margin-top: 50px;
+    padding: 20px 0px 30px 0px;
+}
+
+.formContainer h1 {
+    font-size: 1.25rem;
+    color: rgb(68, 68, 68);
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.inputBox label {
+    font-size: 0.75rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color:rgb(66, 66, 66);
+    letter-spacing: 2px;
+}
+
+.inputBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    max-width: 1000px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding-left: 8px;
+    height: 32px;
+    outline: none;
+}
+
+input[type="password"]:invalid:focus {
+    border: 1px solid rgb(179, 10, 10);
+}
+
+.passMatch {
+    color: rgb(179, 10, 10);
+    font-size: 0.75rem;
+    height: 10px;
+}
+
+.formContainer input:focus {
+    border: 2px solid rgb(112, 123, 218);
+    box-shadow: 0px 1px 5px 0px rgba(138, 168, 196, 0.5);
+}
+
+
+.break {
+    flex-basis: 100%;
+    margin-top: 20px;
+}
+
+.rightSide button {
+    border: none;
+    width: 225px;
+    height: 50px;
+    margin: 40px 0px 0px 50px;
+    background-color: rgb(67, 99, 67);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.rightSide button:hover {
+    cursor: pointer;
+    background-color:rgb(51, 75, 51);
+}
+
+.logInText {
+    margin: 30px 0px 0px 50px;
+    font-size: 1rem;
+}
+
+.logInText span {
+    color:rgb(75, 112, 75);
+    font-weight: bold;
+    cursor: pointer;
+}
