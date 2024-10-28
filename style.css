@@ -40,7 +40,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(248, 248, 248);
+    background-color: #f9fafc;
 }
 
 .logoContainer {
